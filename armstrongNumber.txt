@@ -1,0 +1,39 @@
+ 
+import java.util.*;
+ public class Main {
+    public static int countDigit(int x)
+    {
+        int count= 0 ;
+        while(x!=0)
+        {
+            count = count+1;
+            x=x/10;
+        }
+        return count;
+    }
+    public static int armstrongNumber(int n,int digit)
+    {
+        double sum=0;
+        while(n!=0)
+        {
+            sum=sum + Math.pow(n%10,digit);
+            n=n/10;
+        }
+        return (int)sum;
+    }
+    public static void main(String args[])
+    {
+        int num = 153;
+        int ans= armstrongNumber(num,countDigit(num));
+        if(num == ans)
+        System.out.println("It is arm strong number");
+        
+        for(int i=0;i<=2000;i++)
+        {
+            ans=armstrongNumber(i,countDigit(i));
+            if(i == ans)
+                System.out.println(i);
+        }
+        
+ }
+}

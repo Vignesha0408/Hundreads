@@ -1,0 +1,14 @@
+ 
+import java.util.*;
+ public class Main {
+    public static void main(String args[])
+    {
+        int num = 82774,rev=0,c=0;
+        while(num!=0)
+        {
+            c=c+num%10;
+            num=num/10;
+        }
+         System.out.println(c);
+ }
+}

@@ -1,0 +1,11 @@
+ 
+import java.util.*;
+ public class Main {
+    public static void main(String args[])
+    {
+        double r=50000 ;
+        double a =  Math.PI *r*r;
+        System.out.println(a);
+        System.out.println( );
+}
+}

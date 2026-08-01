@@ -1,0 +1,13 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class LargestNumber {
+   public LargestNumber() {
+   }
+
+   public static void main(String[] var0) {
+      short var1 = 500;
+      byte var2 = 60;
+      byte var3 = 10;
+      short var4 = (var1 > var2 ? var1 : var2) < var3 ? var3 : (var1 > var2 ? var1 : var2);
+      System.out.println(var4);
+   }
+}

@@ -1,0 +1,52 @@
+import  java.util.Scanner;
+import java.lang.String;
+
+public class helloWorld{
+
+    public static void main(String[] args)
+    {
+         
+        Scanner sc=new Scanner(System.in);
+
+        // System.out.println("College Annual day");
+        
+        // System.out.println("Enter name"); String name = sc.nextLine();
+        // System.out.println("Your "+name);
+        // System.out.println("Enter age"); int age = sc.nextInt();sc.nextLine();
+        // System.out.println("Your age is "+age);
+        // System.out.println("Enter adress in 1 line"); String address = sc.nextLine();
+        // System.out.println("Your aaddress is "+address);
+
+        // System.out.println("Sum of 5 and 6 is ");
+        Function obj1 = new Function();
+        System.out.println(obj1.Addition(5,6));
+        obj1.swapWith3rdVar(5,6);
+        obj1.swapWithout3rdVar(5,6);
+
+        
+
+        sc.close();
+    }
+}
+
+
+class Function{
+    public int Addition(int a,int b)
+    {
+        return a+b;
+    }
+    public void swapWith3rdVar(int a,int b){
+        int temp=a;
+        a=b;
+        b=temp;
+        System.out.println("a= "+a+"b= "+b);
+    }
+    public void swapWithout3rdVar(int a,int b){
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("a= "+a+"b= "+b);
+
+    }
+
+}

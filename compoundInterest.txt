@@ -1,0 +1,13 @@
+//A person deposits ₹50,000 in a bank at an annual interest rate of 8%.
+//  The interest is compounded once every year for 3 years.
+import java.util.*;
+ public class Main {
+    public static void main(String args[])
+    {
+        double cashInit=50000,interest=0.08,finalCash,year=3;;
+        finalCash = cashInit *Math.pow((1+interest),year);
+        double compoundInterest = finalCash - cashInit ;
+        System.out.println(finalCash);
+        System.out.println(compoundInterest);
+}
+}
