@@ -1,0 +1,34 @@
+ 
+import java.util.*;
+class Calculator
+{
+    int plus(int x,int y)
+    {
+        return x+y;
+    }
+    int minus(int x,int y)
+    {
+        return x-y;
+    }
+    int xly(int x,int y)
+    {
+        return x*y;
+    }
+    int dvn(int x,int y)
+    {
+        return x/y;
+    }
+    int mod(int x,int y)
+    {
+        return x%y;
+    }
+}
+
+ public class Main {
+    public static void main(String args[])
+    {
+        
+        Calculator a = new Calculator();
+        System.out.println(a.mod (a.plus( a.plus(2,3),a.minus(a.plus((a.xly(9,8)),6),9)),70) );
+  }
+}
